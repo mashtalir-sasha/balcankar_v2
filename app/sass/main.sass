@@ -1,0 +1,227 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	padding: 0
+	margin: 0
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+::-webkit-input-placeholder
+	color: #9a9a9a
+	opacity: 1
+
+::-moz-placeholder
+	color: #9a9a9a
+	opacity: 1
+
+::-moz-placeholder
+	color: #9a9a9a
+	opacity: 1
+
+::-ms-input-placeholder
+	color: #9a9a9a
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.25
+	font-family: $regular
+	overflow-x: hidden
+	opacity: 1
+	background-color: #fff
+
+h1,h2,h3,h4,h5,h6
+	font-weight: normal
+
+.container
+	position: relative
+
+.head
+	position: relative
+	padding-bottom: 60px
+	background: url(../img/head_bg.jpg) top center no-repeat
+	&:before
+		content: ''
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		background-color: rgba(#000, .78)
+	&__ttl
+		font-family: $bold
+		text-align: center
+		text-transform: uppercase
+		font-size: 44px
+		line-height: 1.5
+		color: #fff
+		margin-top: 40px
+	&__subttl
+		font-family: $bold
+		text-align: center
+		text-transform: uppercase
+		font-size: 34px
+		line-height: 1.5
+		color: #fff
+	&__desc
+		text-align: center
+		text-transform: uppercase
+		font-size: 25px
+		line-height: 1.5
+		color: #fff
+		margin-top: 25px
+		span
+			text-transform: none
+
+.head-nav
+	padding: 15px 0
+	&__logo
+		margin: 5px 0
+
+.nav-mnu
+	list-style-type: none
+	&__li
+		float: left
+		margin-right: 40px
+		&:last-child
+			margin-right: 0
+		a
+			display: table
+			margin: 15px 0
+			color: #fff
+			font-size: 20px
+			padding-bottom: 2px
+			transition: border-color ease .5s
+			&:hover
+				border-bottom: 1px solid $accent
+
+.nav-phone
+	&__numb
+		display: block
+		font-family: $semi
+		font-size: 20px
+		text-align: center
+		color: #fff
+		margin-bottom: 5px
+	&__link
+		display: table
+		margin: 0 auto
+		font-size: 20px
+		text-align: center
+		color: #fff
+		padding-bottom: 2px
+		border-bottom: 1px solid $accent
+
+.head-info
+	padding-top: 35px
+	border: 8px solid $accent
+	border-bottom: none
+	margin-top: 35px
+	&__item
+		font-family: $bold
+		font-size: 18px
+		max-width: 380px
+		margin: 0 auto 15px
+		padding-left: 55px
+		color: #fff
+		&:last-child
+			margin-bottom: 0
+		&_i1
+			background: url(../img/head_ico1.svg) left center no-repeat
+			background-size: 40px 40px
+		&_i2
+			background: url(../img/head_ico2.svg) left center no-repeat
+			background-size: 40px 40px
+		&_i3
+			background: url(../img/head_ico3.svg) left center no-repeat
+			background-size: 40px 40px
+
+.head-form
+	background-color: rgba(#fff, .78)
+	padding: 35px 70px
+	margin-top: 35px
+	position: relative
+	&:before
+		content: ''
+		width: 537px
+		height: 340px
+		background-image: url(../img/head_img.png)
+		position: absolute
+		top: -120px
+		left: -480px
+	&__ttl
+		font-family: $bold
+		color: #151414
+		margin-bottom: 15px
+	&__input
+		display: block
+		min-width: 260px
+		background-color: #fff
+		border: none
+		outline: none
+		padding: 5px 20px
+		font-size: 18px
+		text-align: center
+	&__btn
+		display: block
+		min-width: 280px
+		border: none
+		outline: none
+		padding: 8px 0
+		margin: 15px auto 0
+		font-family: $bold
+		font-size: 20px
+		text-align: center
+		color: #fff
+		background-color: $accent
+		border-bottom: 3px solid darken($accent, 15%)
+		transition: all ease .5s
+		&:hover
+			background-color: darken($accent, 10%)
+			border-color: darken($accent, 25%)
+
+.rline
+	position: relative
+	display: table
+	margin: 0 auto
+
+.rfield_error
+	position: absolute
+	bottom: 0
+	right: 5px
+	font-size: 12px
+	color: $accent
+	background-color: #fff
+	visibility: hidden
+
+
+
+
+.thn
+	color: #212121
+	h3
+		font-family: $bold
+		font-size: 24px
+		text-align: center
+		margin-bottom: 20px
+	p
+		font-size: 18px
+		text-align: center
+
+@import "media" // Всегда в конце

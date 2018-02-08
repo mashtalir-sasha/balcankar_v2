@@ -1,0 +1,204 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	padding: 0
+	margin: 0
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+.search-form__input::-webkit-input-placeholder
+	color: #e4e4e4
+	opacity: 1
+
+.search-form__input:-moz-placeholder
+	color: #e4e4e4
+	opacity: 1
+
+.search-form__input::-moz-placeholder
+	color: #e4e4e4
+	opacity: 1
+
+.search-form__input:-ms-input-placeholder
+	color: #e4e4e4
+	opacity: 1
+
+.field::-webkit-input-placeholder
+	color: #9a9a9a
+	opacity: 1
+
+.field:-moz-placeholder
+	color: #9a9a9a
+	opacity: 1
+
+.field::-moz-placeholder
+	color: #9a9a9a
+	opacity: 1
+
+.field:-ms-input-placeholder
+	color: #9a9a9a
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.25
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+	background-color: #fafdf9
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+h1,h2,h3,h4,h5,h6
+	font-weight: normal
+
+.container
+	position: relative
+
+.main-nav
+	padding: 20px 0
+	background-color: #fff
+	box-shadow: 0px 3px 2.7px 0.3px rgba(27, 117, 188, 0.25)
+	position: fixed
+	width: 100%
+	top: 0
+	left: 0
+	z-index: 3
+
+.head-call
+	line-height: 1
+	padding-left: 45px
+	background-image: url(../img/head_call.svg)
+	background-size: contain
+	background-repeat: no-repeat
+	background-position: 0 0
+	&__txt
+		font-size: 14px
+		color: $accent
+	&__link
+		font-size: 14px
+		color: $accent
+
+.search-form
+	position: relative
+	background-color: #82b3da
+	padding: 6px 14px
+	border-radius: 15px
+	font-size: 14px
+	&__input
+		display: block
+		min-width: 100%
+		background-color: transparent
+		border: none
+		outline: none
+		color: #fff
+	&__btn
+		display: block
+		position: absolute
+		right: 14px
+		top: 6px
+		background-color: transparent
+		border: none
+		outline: none
+		width: 17px
+		height: 17px
+		background-image: url(../img/search_ico.svg)
+		background-size: contain
+
+.shop-cart
+	display: table
+	position: relative
+	margin: 0 auto
+	width: 27px
+	height: 27px
+	background-image: url(../img/shop_cart.svg)
+	background-size: contain
+	&__numb
+		width: 20px
+		height: 20px
+		padding: 4px
+		border-radius: 50%
+		font-family: $title-font
+		font-size: 10px
+		text-align: center
+		color: #fff
+		background-color: $accent
+		position: absolute
+		bottom: -8px
+		right: -8px
+
+.lang
+	overflow: hidden
+	background-color: $accent
+	border-radius: 14px
+	padding: 6px 10px
+	cursor: pointer
+	&__ico
+		width: 15px
+		height: 15px
+		float: left
+		&.ru
+			background-image: url(../img/lang_ru.png)
+	&__name
+		float: left
+		color: #fff
+		font-size: 12px
+		line-height: 1
+		margin: 1px 3px
+	&__link
+		float: left
+		width: 8px
+		height: 4px
+		background-image: url(../img/lang_link.svg)
+		margin: 5px 0
+
+.nav-mnu
+	list-style-type: none
+	margin-top: 20px
+	&_foot
+		float: right
+		margin-top: 0
+	&__li
+		font-family: OpenSans-Semibold
+		font-size: 14px
+		text-transform: uppercase
+		display: inline-block
+		margin-right: 30px
+		a
+			color: $accent
+			&:hover
+				color: darken($accent,5%)
+				text-decoration: underline
+			&.active
+				color: darken($accent,5%)
+				text-decoration: underline
+		&:last-child
+			margin-right: 0
+
+.foot
+	background-color: #fff
+	padding: 35px 0
+
+.cprt
+	font-size: 14px
+	color: $accent
+	text-align: center
+	margin-top: 35px
