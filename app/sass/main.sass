@@ -88,6 +88,12 @@ h1,h2,h3,h4,h5,h6
 		margin-top: 25px
 		span
 			text-transform: none
+		&_v2
+			text-transform: none
+			max-width: 800px
+			background: rgba($accent, .7)
+			padding: 5px 20px
+			margin: 20px auto 0
 
 .head-nav
 	padding: 15px 0
@@ -103,7 +109,7 @@ h1,h2,h3,h4,h5,h6
 			margin-right: 0
 		a
 			display: table
-			margin: 15px 0
+			margin: 23px 0
 			color: #fff
 			font-size: 20px
 			padding-bottom: 2px
@@ -134,7 +140,6 @@ h1,h2,h3,h4,h5,h6
 	border-bottom: none
 	margin-top: 35px
 	&__item
-		font-family: $bold
 		font-size: 18px
 		max-width: 380px
 		margin: 0 auto 15px
@@ -173,7 +178,7 @@ h1,h2,h3,h4,h5,h6
 		display: block
 		min-width: 260px
 		background-color: #fff
-		border: none
+		border: 1px solid #d4d4d4
 		outline: none
 		padding: 5px 20px
 		font-size: 18px
@@ -186,12 +191,14 @@ h1,h2,h3,h4,h5,h6
 		padding: 8px 0
 		margin: 15px auto 0
 		font-family: $bold
-		font-size: 20px
+		font-size: 18px
 		text-align: center
 		color: #fff
 		background-color: $accent
-		border-bottom: 3px solid darken($accent, 15%)
+		border-bottom: 3px solid darken($accent, 25%)
 		transition: all ease .5s
+		border-radius: 5px
+		letter-spacing: 1.2px
 		&:hover
 			background-color: darken($accent, 10%)
 			border-color: darken($accent, 25%)
@@ -210,8 +217,602 @@ h1,h2,h3,h4,h5,h6
 	background-color: #fff
 	visibility: hidden
 
+.catalog
+	padding: 50px 0
+	&__ttl
+		font-family: $bold
+		font-size: 42px
+		color: $title-color
+		text-transform: uppercase
+		text-align: center
+		margin-bottom: 50px
+		span
+			font-family: $regular
 
+.mb100
+	margin-bottom: 100px
 
+.slider
+	position: relative
+	&:before
+		content: ''
+		width: 100%
+		height: 100%
+		border: 6px solid $accent
+		position: absolute
+		left: -20px
+		top: 14px
+	&2
+		&:before
+			content: ''
+			left: inherit
+			right: -20px
+	&__img
+		outline: none
+
+.slick-dots
+	display: table
+	position: relative
+	overflow: hidden
+	margin: 0 auto
+	bottom: 30px
+	li
+		font-size: 0
+		float: left
+		margin: 0 5px
+		button
+			background-color: transparent
+			border: none
+			width: 10px
+			height: 10px
+			border: 1px solid #fff
+			border-radius: 50%
+			outline: none
+		&.slick-active
+			button
+				background-color: #fff
+
+.item
+	position: relative
+	padding: 5px 0 0 90px
+	min-height: 90px
+	margin-bottom: 20px
+	&:before
+		content: ''
+		width: 4px
+		height: 75px
+		background-color: $accent
+		position: absolute
+		top: 0
+		left: 60px
+	&:after
+		content: ''
+		height: 4px
+		width: 95px
+		background-color: $accent
+		position: absolute
+		top: 86px
+		left: 60px
+	&_i1
+		background: url(../img/numb_1.png) top left no-repeat
+	&_i2
+		background: url(../img/numb_2.png) top left no-repeat
+	&_i3
+		background: url(../img/numb_3.png) top left no-repeat
+	&_i4
+		background: url(../img/numb_4.png) top left no-repeat
+	&__ttl
+		font-size: 25px
+		font-family: $semi
+		text-transform: uppercase
+		span
+			font-family: $regular
+	&__txt
+		font-family: $semi
+		font-size: 18px
+		line-height: 1.5
+	&__ul
+		display: table
+		margin: 20px auto
+		font-family: $bold
+		text-transform: uppercase
+		li
+			line-height: 1.4
+			span
+				text-transform: none
+	&__price
+		font-family: $bold
+		font-size: 32px
+		text-align: center
+	&__btn
+		display: table
+		border: none
+		outline: none
+		padding: 8px 40px
+		margin: 15px auto 0
+		font-family: $bold
+		font-size: 18px
+		text-align: center
+		color: #fff
+		background-color: $accent
+		border-bottom: 3px solid darken($accent, 25%)
+		transition: all ease .5s
+		border-radius: 5px
+		letter-spacing: 1.2px
+		&:hover
+			background-color: darken($accent, 10%)
+			border-color: darken($accent, 25%)
+
+.form
+	background: url(../img/form_bg.jpg) center center no-repeat
+	padding: 100px 0
+
+.form-block
+	background-color: rgba(#4b5051, .95)
+	border: 4px solid $accent
+	padding: 35px 0
+	position: relative
+	&__ttl
+		position: relative
+		z-index: 1
+		font-family: $bold
+		font-size: 26px
+		text-transform: uppercase
+		color: #fff
+		text-align: center
+		margin-bottom: 35px
+		padding-left: 200px
+		span
+			font-family: $regular
+	&__form
+		padding: 40px
+		background-color: #fff
+		float: right
+		margin-right: -40px
+	&__subttl
+		font-family: $bold
+		font-size: 18px
+		text-transform: uppercase
+		margin-bottom: 15px
+		span
+			font-family: $regular
+	&__input
+		display: block
+		min-width: 260px
+		background-color: #f8f8f8
+		border: 1px solid #d4d4d4
+		outline: none
+		padding: 5px 20px
+		font-size: 18px
+		text-align: center
+		margin: 15px 0
+	&__btn
+		display: table
+		border: none
+		outline: none
+		padding: 8px 40px
+		margin: 15px auto 0
+		font-family: $bold
+		font-size: 18px
+		text-align: center
+		color: #fff
+		background-color: $accent
+		border-bottom: 3px solid darken($accent, 25%)
+		transition: all ease .5s
+		border-radius: 5px
+		letter-spacing: 1.2px
+		&:hover
+			background-color: darken($accent, 10%)
+			border-color: darken($accent, 25%)
+	&__img
+		position: absolute
+		top: 10px
+		left: -50px
+
+.range
+	margin-bottom: 15px
+	position: relative
+	&.last
+		margin-bottom: 0
+	&__label
+		width: 50%
+		float: left
+		font-family: $semi
+	&__note
+		background-color: $accent
+		border-radius: 2px
+		padding: 2px
+		color: #fff
+		font-size: 12px
+		position: absolute
+		top: -15px
+		left: 50%
+		em
+			font-style: normal
+
+input[type="range"]
+	width: 50%
+	-webkit-appearance: none
+	margin: 10px 0
+	&:focus
+		outline: none
+		&::-webkit-slider-runnable-track
+			background: #4b5051
+		&::-ms-fill-lower
+			background: #4b5051
+		&::-ms-fill-upper
+			background: #4b5051
+	&::-webkit-slider-runnable-track 
+		width: 100%
+		height: 2px
+		cursor: pointer
+		animate: 0.2s
+		background: #4b5051
+		border-radius: 25px
+		border: 0px solid #000101
+	&::-webkit-slider-thumb
+		border: 0px solid #000000
+		height: 12px
+		width: 12px
+		background: $accent
+		cursor: pointer
+		-webkit-appearance: none
+		margin-top: -6px
+	&::-moz-range-track
+		width: 100%
+		height: 12.8px
+		cursor: pointer
+		animate: 0.2s
+		background: #4b5051
+		border-radius: 25px
+		border: 0px solid #000101
+	&:-moz-range-thumb
+		border: 0px solid #000000
+		height: 12px
+		width: 12px
+		background: $accent
+		cursor: pointer
+	&::-ms-track
+		width: 100%
+		height: 12.8px
+		cursor: pointer
+		animate: 0.2s
+		background: transparent
+		border-color: transparent
+		border-width: 39px 0
+		color: transparent
+	&::-ms-fill-lower
+		background: #4b5051
+		border: 0px solid #000101
+		border-radius: 50px
+	&::-ms-fill-upper
+		background: #4b5051
+		border: 0px solid #000101
+		border-radius: 50px
+	&::-ms-thumb
+		border: 0px solid #000000
+		height: 12px
+		width: 12px
+		background: $accent
+		cursor: pointer
+
+.about
+	position: relative
+	padding: 100px 0
+	background: url(../img/about_bg.jpg) top center no-repeat
+	&:before
+		content: ''
+		width: 100%
+		height: 100%
+		background-color: rgba(#2d2b2b, .88)
+		position: absolute
+		top: 0
+		left: 0
+	&__ttl
+		font-size: 42px
+		text-transform: uppercase
+		text-align: center
+		color: #fff
+	&__txt
+		font-family: $semi
+		font-size: 18px
+		line-height: 1.5
+		color: #fff
+		text-align: center
+		margin: 100px 0
+
+.slick-slide
+	outline: none
+
+.additional
+	background-color: #f8f8f8
+	padding: 50px 0
+	&__ttl
+		font-family: $bold
+		font-size: 42px
+		color: $title-color
+		text-transform: uppercase
+		text-align: center
+		margin-bottom: 50px
+		span
+			font-family: $regular
+
+.additional-item
+	position: relative
+	&__ttl
+		position: relative
+		font-size: 25px
+		font-family: $semi
+		text-transform: uppercase
+		padding: 10px 0
+		span
+			font-family: $regular
+		&:before
+			content: ''
+			width: 120px
+			height: 100%
+			border: 4px solid $accent
+			border-bottom: none
+			border-left: none
+			position: absolute
+			top: 0
+			right: 0
+		&:after
+			content: ''
+			width: 75px
+			height: 4px
+			background-color: $accent
+			position: absolute
+			bottom: 0
+			left: 0
+	&__txt
+		font-family: $semi
+		font-size: 18px
+		line-height: 1.5
+		margin: 30px 0
+	&__btn
+		display: table
+		border: none
+		outline: none
+		padding: 8px 40px
+		margin: 15px auto 0
+		font-family: $bold
+		font-size: 18px
+		text-align: center
+		color: #fff
+		background-color: $accent
+		border-bottom: 3px solid darken($accent, 25%)
+		transition: all ease .5s
+		border-radius: 5px
+		letter-spacing: 1.2px
+		&:hover
+			background-color: darken($accent, 10%)
+			border-color: darken($accent, 25%)
+	&__ul
+		padding-left: 20px
+		font-family: $semi
+		line-height: 1.5
+		margin: 30px 0
+
+.slider-add
+	position: relative
+	&:before
+		content: ''
+		width: 100%
+		height: 100%
+		background-color: #fff		
+		position: absolute
+		top: 25px
+		left: -25px
+	img
+		position: relative
+		z-index: 2
+
+.foot
+	.foot-contacts
+		width: 50%
+		float: left
+		background-color: #000 //2f3233
+		min-height: 500px
+		&__ttl
+			font-family: $bold
+			font-size: 42px
+			text-transform: uppercase
+			color: #fff
+			margin-bottom: 30px
+		&__link
+			display: block
+			font-size: 20px
+			line-height: 1.5
+			color: #fff
+		&__btn
+			display: table
+			border: none
+			outline: none
+			padding: 8px 35px
+			margin-top: 30px
+			font-family: $bold
+			font-size: 18px
+			text-align: center
+			color: #fff
+			background-color: $accent
+			border-bottom: 3px solid darken($accent, 25%)
+			transition: all ease .5s
+			border-radius: 5px
+			letter-spacing: 1.2px
+			&:hover
+				background-color: darken($accent, 10%)
+				border-color: darken($accent, 25%)
+		&__addr
+			font-size: 20px
+			line-height: 1.5
+			color: #fff
+			margin-top: 30px
+		&__eml
+			display: block
+			font-size: 20px
+			line-height: 1.5
+			color: #fff
+			margin-top: 30px
+	.foot-map
+		width: 50%
+		float: right
+
+.flex
+	display: flex
+	min-height: 500px
+	&__wrap
+		width: 360px
+		padding: 40px
+		margin: auto
+		position: relative
+		&:after
+			content: ''
+			width: 65px
+			height: 65px
+			position: absolute
+			top: 0
+			right: 0
+			border: 2px solid $accent
+			border-bottom: none
+			border-left: none
+		&:before
+			content: ''
+			width: 65px
+			height: 65px
+			position: absolute
+			bottom: 0
+			left: 0
+			border: 2px solid $accent
+			border-top: none
+			border-right: none
+
+#map
+	width: 100%
+	min-height: 500px
+
+.modal
+	padding: 40px
+	background-color: #fff
+	&__ttl
+		position: relative
+		font-family: $bold
+		font-size: 32px
+		text-align: center
+		text-transform: uppercase
+		margin-bottom: 30px
+		.subTtl
+			font-family: $regular
+		&:after
+			content: ''
+			width: 2px
+			height: 80px
+			background-color: $accent
+			position: absolute
+			bottom: 0
+			left: 0
+		&:before
+			content: ''
+			width: 80px
+			height: 2px
+			background-color: $accent
+			position: absolute
+			bottom: 0
+			left: 10px
+	&__wrap
+		position: relative
+		padding: 20px 0
+		&:after
+			content: ''
+			width: 2px
+			height: 80px
+			background-color: $accent
+			position: absolute
+			top: 0
+			right: 0
+		&:before
+			content: ''
+			width: 80px
+			height: 2px
+			background-color: $accent
+			position: absolute
+			top: 0
+			right: 10px
+	&__txt
+		font-family: $regular
+		font-size: 18px
+		text-align: center
+		max-width: 360px
+		margin: 0 auto 30px
+	&__input
+		display: block
+		min-width: 260px
+		background-color: #f8f8f8
+		border: 1px solid #d4d4d4
+		outline: none
+		padding: 5px 20px
+		font-size: 18px
+		text-align: center
+		margin: 15px 0
+	&__btn
+		display: table
+		border: none
+		outline: none
+		padding: 8px 40px
+		margin: 15px auto 0
+		font-family: $bold
+		font-size: 18px
+		text-align: center
+		color: #fff
+		background-color: $accent
+		border-bottom: 3px solid darken($accent, 25%)
+		transition: all ease .5s
+		border-radius: 5px
+		letter-spacing: 1.2px
+		&:hover
+			background-color: darken($accent, 10%)
+			border-color: darken($accent, 25%)
+
+.mob-mnu
+	background-color: #000
+	padding: 15px 0
+	width: 100%
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 10
+	&__logo
+		max-width: 130px
+	&__humb
+		float: right
+		margin: 7px 0
+	&__ul
+		list-style-type: none
+	&__li
+		padding: 10px 0
+		a
+			color: #fff
+		&:last-child
+			margin-bottom: 20px
+	&__numb
+		display: block
+		color: #fff
+		padding: 25px 0 5px
+		border-top: 1px solid #e4e4e4
+	&__link
+		display: block
+		color: #fff
+		padding: 5px 0
+
+.mob-mnu-list
+	overflow: hidden
+	height: 0
+	transition: all ease .4s
+
+.mob-mnu-list.show
+	height: 321px
+	padding-top: 20px
+	transition: all ease .4s
 
 .thn
 	color: #212121
@@ -223,5 +824,25 @@ h1,h2,h3,h4,h5,h6
 	p
 		font-size: 18px
 		text-align: center
+
+.posf
+	width: 100%
+	background-color: #000
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 10
+	display: none
+
+.posf.show
+	display: block
+	animation: fadeEffect 1s
+	animation-duration: .4s
+
+@keyframes fadeEffect
+	from
+		opacity: 0
+	to
+		opacity: 1
 
 @import "media" // Всегда в конце

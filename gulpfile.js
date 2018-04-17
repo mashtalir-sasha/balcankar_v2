@@ -99,9 +99,9 @@ gulp.task('build', ['removedist', 'imagemin', 'sass', 'js'], function() {
 gulp.task('deploy', function() {
 
 	var conn = ftp.create({
-		host:      '31.170.166.67',
-		user:      'u862753388',
-		password:  'mashtalir94',
+		host:      'digita12.ftp.tools',
+		user:      'digita12_ftp',
+		password:  '9G6ZM8pfn9',
 		parallel:  10,
 		log: gutil.log
 	});
@@ -111,7 +111,7 @@ gulp.task('deploy', function() {
 	'dist/.htaccess',
 	];
 	return gulp.src(globs, {buffer: false})
-	.pipe(conn.dest('/'));
+	.pipe(conn.dest('/elhim-service.com.ua/www'));
 
 });
 

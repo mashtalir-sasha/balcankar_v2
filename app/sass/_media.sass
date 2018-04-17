@@ -1,16 +1,209 @@
 @import "vars"
 
 @media only screen and (max-width : 1199px)
-	/**/
+	.nav-mnu
+		&__li
+			margin-right: 15px
+			a
+				font-size: 16px
 
 @media only screen and (max-width : 991px)
-	/**/
+	.nav-mnu
+		&__li
+			margin-right: 12px
+			a
+				font-size: 12px
+				margin: 27px 0
+	.nav-phone
+		margin: 16px 0
+		&__numb
+			font-size: 12px
+		&__link
+			font-size: 12px
+	.head-form
+		&:before
+			left: -445px
+		&__btn
+			font-size: 18px
+	.catalog
+		&__ttl
+			font-size: 36px
+	.item
+		background-size: 30px 46px
+		padding: 5px 0 0 45px
+		min-height: inherit
+		&:after
+			display: none
+		&:before
+			left: 35px
+			height: 46px
+		&__ttl
+			font-size: 22px
+		&__txt
+			font-size: 16px
+		&__price
+			font-size: 28px
+		&__btn
+			font-size: 18px
+	.form-block
+		&__btn
+			font-size: 18px
+	.about
+		&__ttl
+			font-size: 36px
+		&__txt
+			font-size: 16px
+	.additional
+		&__ttl
+			font-size: 36px
+	.additional-item
+		&__ttl
+			font-size: 22px
+		&__txt
+			font-size: 16px
+		&__btn
+			font-size: 18px
+	.foot
+		.foot-contacts
+			&__ttl
+				font-size: 36px
+			&__link
+				font-size: 20px
+			&__addr
+				font-size: 20px
+			&__eml
+				font-size: 20px
+			&__btn
+				font-size: 18px
 
 @media only screen and (max-width : 767px) /*640*/
-	/**/
+	.head
+		&__ttl
+			margin-top: 120px
+	.head-form
+		&:before
+			display: none
+	.slider
+		margin-bottom: 30px
+		&:before
+			display: none
+	.form-block
+		&__img
+			top: 65px
+			max-width: 250px
+	.slider-add
+		margin-bottom: 50px
+		&:before
+			display: none
+	.foot
+		.foot-contacts
+			float: none
+			width: 100%
+			text-align: center
+			&__btn
+				margin: 30px auto 0
+		.foot-map
+			float: none
+			width: 100%
 
 @media only screen and (max-width : 480px) /*360*/
-	/**/
+	.head
+		&__ttl
+			font-size: 36px
+			line-height: 1.25
+			margin-bottom: 15px
+		&__subttl
+			font-size: 28px
+			line-height: 1.25
+		&__desc
+			font-size: 18px
+	.head-info
+		border: none
+		&__item
+			padding-left: 50px
+	.head-form
+		padding: 35px 20px
+	.catalog
+		&__ttl
+			font-size: 28px
+	.form
+		padding: 50px 0
+	.form-block
+		border-width: 2px
+		&__ttl
+			padding-left: 0
+		&__img
+			display: none
+		&__form
+			padding: 40px 10px
+			float: none
+			margin-right: 0
+		.range
+			&__label
+				float: none
+				width: 100%
+			&__note
+				top: 0
+				right: 0
+				left: inherit
+		input[type=range]
+			float: none
+			width: 100%
+	.about
+		padding: 50px 0
+		&__ttl
+			font-size: 28px
+		&__txt
+			margin: 25px 0
+	.additional
+		&__ttl
+			font-size: 28px
+	.foot
+		.foot-contacts
+			&__ttl
+				font-size: 28px
+	.flex
+		&__wrap
+			padding: 0
+			&:before, &:after
+				display: none
+	.modal
+		padding: 0
+		&__ttl
+			&:before
+				display: none
+			&:after
+				display: none
+		&__wrap
+			&:before
+				display: none
+			&:after
+				display: none
+		&__btn
+			margin-bottom: 20px
 
 @media only screen and (max-width : 360px) /*320*/
-	/**/
+	.head
+		&__ttl
+			font-size: 32px
+		&__subttl
+			font-size: 24px
+		&__desc
+			font-size: 16px
+	.head-info
+		&__item
+			font-size: 16px
+	.head-form
+		&__input
+			min-width: 250px
+		&__btn
+			min-width: 250px
+	.catalog__ttl
+	.form-block
+		&__ttl
+			font-size: 22px
+		&__btn
+			padding: 8px 39px
+	.slick-slide
+		img
+			margin: 0 auto
