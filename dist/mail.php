@@ -54,9 +54,6 @@
 		    return $responseBody;
 		}
 		send("api.smsfeedback.ru", 80, "mastercar", "mastercar7", 
-		          "380672306318", "$fulldata", "Master Kar");
-		send("api.smsfeedback.ru", 80, "mastercar", "mastercar7", 
-		          "380674026161", "$fulldata", "Master Kar");
-
+		          "380671032080", "$fulldata", "Master Kar");
 	}
 ?>
